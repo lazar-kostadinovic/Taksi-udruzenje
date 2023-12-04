@@ -1,0 +1,61 @@
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES  ('Ana', 'M', 'Kovačević', '1234567890123', '0651234567', 'Bulevar Oslobodjenja 1');
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES  ('Marko', 'N', 'Petrović', '2345678901234', '0641234567', 'Bulevar Kralja Aleksandra 22');
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES  ('Jovana', 'S', 'Ivanović', '3456789012345', '0631234567', 'Vojvode Stepe 55');
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES ('Marija', 'M', 'Marković', '0101998134567', '0661234567', 'Bulevar Oslobođenja 15');
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES ('Uros', 'P', 'Petrović', '1503998134567', '0697654321', 'Vojvode Stepe 100');
+
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES ('Marko', 'P', 'Perić', '3456789201234', '0652345678', 'Ulica Kralja Petra 45');
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES ('Maja', 'S', 'Ivanović', '0345678912345', '0643456789', 'Trg Republike 2');
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES ('Nikola', 'D', 'Petrović', '4567890123456', '0654567890', 'Bulevar Nikole Tesle 7');
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES ('Jana', 'K', 'Đorđević', '7895601234567', '0645678901', 'Knez Mihailova 17');
+INSERT INTO Osoba (Ime, SrednjeSlovo, Prezime, JMBG, BrojTelefona, Adresa) VALUES ('Luka', 'N', 'Stojanović', '6789012345678', '0646789012', 'Gospodar Jevremova 21');
+
+INSERT INTO Vozac (BrVozackeDozvole, Kategorija, JMBG) VALUES ('999111222', 'B', '1234567890123');
+INSERT INTO Vozac (BrVozackeDozvole, Kategorija, JMBG) VALUES ('111222333', 'C', '2345678901234');
+INSERT INTO Vozac (BrVozackeDozvole, Kategorija, JMBG) VALUES ('222333444', 'D', '3456789012345');
+INSERT INTO Vozac (BrVozackeDozvole, Kategorija, JMBG) VALUES ('555345678', 'B', '0101998134567');
+INSERT INTO Vozac (BrVozackeDozvole, Kategorija, JMBG) VALUES ('876543219', 'C', '1503998134567');
+
+INSERT INTO AdministrativnoOsoblje (StrucnaSprema, JMBG) VALUES ('SSS', '3456789201234');
+INSERT INTO AdministrativnoOsoblje (StrucnaSprema, JMBG) VALUES ('VSS', '0345678912345');
+INSERT INTO AdministrativnoOsoblje (StrucnaSprema, JMBG) VALUES ('SSS', '4567890123456');
+INSERT INTO AdministrativnoOsoblje (StrucnaSprema, JMBG) VALUES ('SSS', '7895601234567');
+INSERT INTO AdministrativnoOsoblje (StrucnaSprema, JMBG) VALUES ('VSS', '6789012345678');
+
+INSERT INTO Vozilo (Marka, Tip, ID) VALUES ('Audi', 'A4', '1');
+INSERT INTO Vozilo (Marka, Tip, ID) VALUES ('Volkswagen', 'Golf', '2');
+INSERT INTO Vozilo (Marka, Tip, ID) VALUES ('Opel', 'Astra', '3');
+INSERT INTO Vozilo (Marka, Tip, ID) VALUES ('Ford', 'Focus', '4');
+INSERT INTO Vozilo (Marka, Tip, ID) VALUES ('Volkswagen', 'Golf', '5');
+INSERT INTO Vozilo (Marka, Tip, ID) VALUES ('Mercedes', 'C-Class', '6');
+INSERT INTO Vozilo (Marka, Tip, ID) VALUES ('BMW', '3 Series', '7');
+
+
+INSERT INTO SopstvenoVozilo (Boja, ID) VALUES ('Crvena', '6');
+INSERT INTO SopstvenoVozilo (Boja, ID) VALUES ('Plava', '7');
+
+INSERT INTO VoziloTaksiSluzbe (GodinaProizvodnje, DatumIstekaRegistracije, RegistarskaOznaka, ID) VALUES ('2010', '16.04.2023.', 'BG-123-AA', '1');
+INSERT INTO VoziloTaksiSluzbe (GodinaProizvodnje, DatumIstekaRegistracije, RegistarskaOznaka, ID) VALUES ('2015', '02.03.2023.', 'NS-456-BB', '2');
+INSERT INTO VoziloTaksiSluzbe (GodinaProizvodnje, DatumIstekaRegistracije, RegistarskaOznaka, ID) VALUES ('2020', '03.05.2023.', 'KG-789-CC', '3');
+INSERT INTO VoziloTaksiSluzbe (GodinaProizvodnje, DatumIstekaRegistracije, RegistarskaOznaka, ID) VALUES ('2018', '05.07.2023.', 'BG-123-AB', '4');
+INSERT INTO VoziloTaksiSluzbe (GodinaProizvodnje, DatumIstekaRegistracije, RegistarskaOznaka, ID) VALUES ('2019', '09.06.2023.', 'BG-567-CD', '5');
+
+INSERT INTO Musterija (ID, Adresa, BrojTelefona1, BrojTelefona2, BrojTelefona3) VALUES ('1', 'Bulevar Mihajla Pupina 10','0601234567','0605671234','0699123981');
+INSERT INTO Musterija (ID, Adresa, BrojTelefona1, BrojTelefona2) VALUES ('2', 'Knez Mihailova 15','0612345678','06663235454');
+INSERT INTO Musterija (ID, Adresa, BrojTelefona1) VALUES ('3', 'Cara Dušana 20','0623456789');
+INSERT INTO Musterija (ID, Adresa, BrojTelefona1) VALUES ('4', 'Kneza Milosa 50','0654567123');
+INSERT INTO Musterija (ID, Adresa, BrojTelefona1) VALUES ('5', 'Njegoševa 2','0647654321');
+
+INSERT INTO Voznja (ID, VremePocetkaVoznje, VremeKrajaVoznje, PocetnaStanica, KrajnjaStanica, JMBGVozaca, VremePrimanjaPoziva, JMBGAdm, IDMusterije) VALUES ('1', '02.01.2023. 12:00:00', '02.01.2023. 12:30:00', 'Bulevar Oslobodjenja 1', 'Kralja Petra 32', '1234567890123', '02.01.2023. 11:45:00', '3456789201234', '1');
+INSERT INTO Voznja (ID, VremePocetkaVoznje, VremeKrajaVoznje, PocetnaStanica, KrajnjaStanica, JMBGVozaca, VremePrimanjaPoziva, JMBGAdm, IDMusterije) VALUES ('2', '08.01.2023. 14:00:00', '08.01.2023. 14:30:00', 'Bulevar Kralja Aleksandra 22', 'Trg Republike 5', '2345678901234', '08.01.2023. 13:45:00', '0345678912345', '2');
+INSERT INTO Voznja (ID, VremePocetkaVoznje, VremeKrajaVoznje, PocetnaStanica, KrajnjaStanica, JMBGVozaca, VremePrimanjaPoziva, JMBGAdm, IDMusterije) VALUES ('3', '15.02.2023. 11:21:00', '15.02.2023. 11:51:00', 'Vojvode Stepe 55', 'Ustanicka 128', '3456789012345', '15.02.2023. 11:10:00', '4567890123456', '3');
+INSERT INTO Voznja (ID, VremePocetkaVoznje, VremeKrajaVoznje, PocetnaStanica, KrajnjaStanica, JMBGVozaca, VremePrimanjaPoziva, JMBGAdm, IDMusterije) VALUES ('4', '22.02.2023. 13:20:00', '22.02.2023 13:55:00', 'Trg Republike', 'Kalemegdan', '0101998134567', '22.02.2023 13:10', '7895601234567', '4');
+INSERT INTO Voznja (ID, VremePocetkaVoznje, VremeKrajaVoznje, PocetnaStanica, KrajnjaStanica, JMBGVozaca, VremePrimanjaPoziva, JMBGAdm, IDMusterije) VALUES ('5', '12.03.2023. 16:00:00', '12.03.2023. 16:30:00', 'Aerodrom Nikola Tesla', 'Trg Republike', '1503998134567', '12.03.2023. 15:55', '6789012345678', '5');
+
+INSERT INTO Koristi (JMBGVozaca, IDVozila, DatumOd, DatumDo) VALUES ('1234567890123', '1', '01.06.2023. 06:00:00', '12.10.2023. 06:00:00');
+INSERT INTO Koristi (JMBGVozaca, IDVozila, DatumOd, DatumDo) VALUES ('2345678901234', '2', '02.04.2023. 06:00:00', '01.05.2023. 06:00:00');
+INSERT INTO Koristi (JMBGVozaca, IDVozila, DatumOd, DatumDo) VALUES ('3456789012345', '3', '02.04.2023. 15:00:00', '09.11.2023. 15:00:00');
+INSERT INTO Koristi (JMBGVozaca, IDVozila, DatumOd, DatumDo) VALUES ('0101998134567', '6', '09.06.2023. 15:00:00', '30.11.2023. 15:00:00');
+INSERT INTO Koristi (JMBGVozaca, IDVozila, DatumOd, DatumDo) VALUES ('1503998134567', '7', '07.07.2023. 15:00:00', '30.04.2023. 15:00:00');
+
+alter session set nls_date_format = 'DD-MM-YYYY HH24:MI:SS';

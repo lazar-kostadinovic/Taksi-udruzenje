@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19A28472-11F4-4450-8E7D-73C38488E8FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TaksiUdruzenje</RootNamespace>
+    <AssemblyName>TaksiUdruzenje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=3.2.0.0, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.3.2.0\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.3.3\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.21.10.0\lib\net462\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.1\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLayer.cs" />
+    <Compile Include="DTOManager.cs" />
+    <Compile Include="DTOs.cs" />
+    <Compile Include="Entiteti\AdministrativnoOsoblje.cs" />
+    <Compile Include="Entiteti\Koristi.cs" />
+    <Compile Include="Entiteti\Musterija.cs" />
+    <Compile Include="Entiteti\Osoba.cs" />
+    <Compile Include="Entiteti\SopstvenoVozilo.cs" />
+    <Compile Include="Entiteti\Vozac.cs" />
+    <Compile Include="Entiteti\Vozilo.cs" />
+    <Compile Include="Entiteti\VoziloTaksiSluzbe.cs" />
+    <Compile Include="Entiteti\Voznja.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajAdmOsoblje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajAdmOsoblje.Designer.cs">
+      <DependentUpon>DodajAdmOsoblje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajKoristi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajKoristi.Designer.cs">
+      <DependentUpon>DodajKoristi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajMusterije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajMusterije.Designer.cs">
+      <DependentUpon>DodajMusterije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajSopVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajSopVozilo.Designer.cs">
+      <DependentUpon>DodajSopVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajVozaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajVozaca.Designer.cs">
+      <DependentUpon>DodajVozaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajVozilo.Designer.cs">
+      <DependentUpon>DodajVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajVoziloTaksiSluzbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajVoziloTaksiSluzbe.Designer.cs">
+      <DependentUpon>DodajVoziloTaksiSluzbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajVoznje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajVoznje.Designer.cs">
+      <DependentUpon>DodajVoznje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniKoristi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniKoristi.Designer.cs">
+      <DependentUpon>IzmeniKoristi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniMusteriju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniMusteriju.Designer.cs">
+      <DependentUpon>IzmeniMusteriju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniOsobu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniOsobu.Designer.cs">
+      <DependentUpon>IzmeniOsobu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajOsobu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajOsobu.Designer.cs">
+      <DependentUpon>DodajOsobu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniSopVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniSopVozilo.Designer.cs">
+      <DependentUpon>IzmeniSopVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniVoziloTaksiSluzbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniVoziloTaksiSluzbe.Designer.cs">
+      <DependentUpon>IzmeniVoziloTaksiSluzbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniVoznju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniVoznju.Designer.cs">
+      <DependentUpon>IzmeniVoznju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Koristi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Koristi.Designer.cs">
+      <DependentUpon>Koristi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PocetnaStranica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PocetnaStranica.Designer.cs">
+      <DependentUpon>PocetnaStranica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziAdministrativnoOsoblje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziAdministrativnoOsoblje.Designer.cs">
+      <DependentUpon>PrikaziAdministrativnoOsoblje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziMusterije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziMusterije.Designer.cs">
+      <DependentUpon>PrikaziMusterije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziOsobu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziOsobu.Designer.cs">
+      <DependentUpon>PrikaziOsobu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziSopstvenaVozila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziSopstvenaVozila.Designer.cs">
+      <DependentUpon>PrikaziSopstvenaVozila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziVozaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziVozaca.Designer.cs">
+      <DependentUpon>PrikaziVozaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziVozila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziVozila.Designer.cs">
+      <DependentUpon>PrikaziVozila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziVozilaTaksiSluzbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziVozilaTaksiSluzbe.Designer.cs">
+      <DependentUpon>PrikaziVozilaTaksiSluzbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziVoznje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziVoznje.Designer.cs">
+      <DependentUpon>PrikaziVoznje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\VoznjeAdministratora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\VoznjeAdministratora.Designer.cs">
+      <DependentUpon>VoznjeAdministratora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\VoznjeMusterije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\VoznjeMusterije.Designer.cs">
+      <DependentUpon>VoznjeMusterije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\VoznjeVozaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\VoznjeVozaca.Designer.cs">
+      <DependentUpon>VoznjeVozaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapiranja\AdministrativnoOsobljeMapranja.cs" />
+    <Compile Include="Mapiranja\KoristiMapiranja.cs" />
+    <Compile Include="Mapiranja\MusterijaMapiranja.cs" />
+    <Compile Include="Mapiranja\OsobaMapiranja.cs" />
+    <Compile Include="Mapiranja\SopstvenoVoziloMapiranja.cs" />
+    <Compile Include="Mapiranja\VozacMapiranja.cs" />
+    <Compile Include="Mapiranja\VoziloMapiranja.cs" />
+    <Compile Include="Mapiranja\VoziloTaksiSluzbeMapiranja.cs" />
+    <Compile Include="Mapiranja\VoznjaMapiranja.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajAdmOsoblje.resx">
+      <DependentUpon>DodajAdmOsoblje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajKoristi.resx">
+      <DependentUpon>DodajKoristi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajMusterije.resx">
+      <DependentUpon>DodajMusterije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajOsobu.resx">
+      <DependentUpon>DodajOsobu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajSopVozilo.resx">
+      <DependentUpon>DodajSopVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajVozaca.resx">
+      <DependentUpon>DodajVozaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajVozilo.resx">
+      <DependentUpon>DodajVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajVoziloTaksiSluzbe.resx">
+      <DependentUpon>DodajVoziloTaksiSluzbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajVoznje.resx">
+      <DependentUpon>DodajVoznje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniKoristi.resx">
+      <DependentUpon>IzmeniKoristi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniMusteriju.resx">
+      <DependentUpon>IzmeniMusteriju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniOsobu.resx">
+      <DependentUpon>IzmeniOsobu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniSopVozilo.resx">
+      <DependentUpon>IzmeniSopVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniVoziloTaksiSluzbe.resx">
+      <DependentUpon>IzmeniVoziloTaksiSluzbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniVoznju.resx">
+      <DependentUpon>IzmeniVoznju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Koristi.resx">
+      <DependentUpon>Koristi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PocetnaStranica.resx">
+      <DependentUpon>PocetnaStranica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziAdministrativnoOsoblje.resx">
+      <DependentUpon>PrikaziAdministrativnoOsoblje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziMusterije.resx">
+      <DependentUpon>PrikaziMusterije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziOsobu.resx">
+      <DependentUpon>PrikaziOsobu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziSopstvenaVozila.resx">
+      <DependentUpon>PrikaziSopstvenaVozila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziVozaca.resx">
+      <DependentUpon>PrikaziVozaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziVozila.resx">
+      <DependentUpon>PrikaziVozila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziVozilaTaksiSluzbe.resx">
+      <DependentUpon>PrikaziVozilaTaksiSluzbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziVoznje.resx">
+      <DependentUpon>PrikaziVoznje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\VoznjeAdministratora.resx">
+      <DependentUpon>VoznjeAdministratora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\VoznjeMusterije.resx">
+      <DependentUpon>VoznjeMusterije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\VoznjeVozaca.resx">
+      <DependentUpon>VoznjeVozaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets'))" />
+  </Target>
+</Project>
